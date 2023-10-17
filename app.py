@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-RANGE = 6
+RANGE = 101
 def random_num():
     random_number = random.randint(0, RANGE-1)
     return random_number
