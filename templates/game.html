@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Start</title>
+</head>
+<body>
+    <ul>
+        {% for i in range(Range) %}
+            <li><a href="/guess/{{i}}">{{i}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
