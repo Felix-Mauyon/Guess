@@ -23,10 +23,10 @@ def game():
 def isCorrect(num):
     while num != correct:
         if num > correct:
-            message = "Guess Lower"
+            message = "High"
             return render_template('guess.html', message=message)
         elif num < correct:
-            message = "Guess Higher"
+            message = "Low"
             return render_template('guess.html', message=message)
 
     message = f"Correct. The number is {num}"
