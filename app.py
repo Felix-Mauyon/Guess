@@ -9,10 +9,12 @@ def random_num():
     random_number = random.randint(0, RANGE-1)
     return random_number
 
-correct = random_num()
+correct = 0
 
 @app.get("/")
 def index():
+    global correct
+    correct = random_num()
     return render_template("index.html")
 
 @app.get("/game")
